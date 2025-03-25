@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9);
+    /* Biar ada transparansi */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.profile h2,
+.profile p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.section {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.section h3 {
+    border-bottom: 2px solid #0073b1;
+    padding-bottom: 5px;
+    color: #0073b1;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.links a {
+    display: block;
+    text-decoration: none;
+    background: #0073b1;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.links a.github {
+    background: #333;
+}
+
+.links a:hover {
+    background: #005582;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+
+    body {
+        padding: 10px;
+    }
+}
